@@ -2,12 +2,12 @@
 A high-performance lock-free Single-Producer Single-Consumer (SPSC) Ring Buffer implemented in C++ designed for efficient inter-thread communication with minimal synchronization overhead.
 
 # Lock Free queues
-head - insertion to the queue is made
-tail - consumer reads from here
+1. head - insertion to the queue is made
+2. tail - consumer reads from here
 when we reach end of the queue --> wrap back to the beginning
 
 # How to wrap around?
-1. Fast Wrap-Around
+## Fast Wrap-Around
 - Cant do index%size because it takes 10 - 20 CPU cycles
 - WE can have the capacity as power of 2 and do bitwise AND mask
 - index & (capacity -1) because AND bitwise takes 1 cycle
