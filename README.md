@@ -20,8 +20,10 @@ when we reach end of the queue --> wrap back to the beginning
 
 # Data race that we want to prevent
 1. The Code: 
+
 ![img.png](Data/img.png)
 2. The Output: 
+
 ![img_1.png](Data/img_1.png)
 - Here we can see that more than half of our progress is lost 
 - This is the exact issue we are trying to solve
