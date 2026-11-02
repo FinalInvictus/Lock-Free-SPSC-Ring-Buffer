@@ -52,13 +52,4 @@ We can do this in 2 ways:
 - Works very well if capacity is a power of 2 because it can be optimized to a bitwise AND
 
 
-=======
-
-2. The Output:
-
-![img_1.png](Data/img_1.png)
-
-- Here we can see that more than half of our progress is lost
-- This is the exact issue we are trying to solve
-
 
